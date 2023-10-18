@@ -14,3 +14,21 @@ const conProductos = ["Babysec - Ultrasec", "Pampers - Premium care, piel delica
 
 mostrarProductos(sinProductos);
 mostrarProductos(conProductos);
+
+const usuario = {
+    nombre: "Pañalera",
+    existencias: 2020
+}
+
+const productos = Object.products (usuario)
+
+for(const [key, value] of productos){
+    console.log(`${key}: ${value}`);
+}
+
+const valores = Object.values(usuario);
+console.log(valores);
+
+const keys = Object.keys(usuario);
+console.log(keys);
+
