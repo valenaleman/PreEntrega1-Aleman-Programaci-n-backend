@@ -40,3 +40,20 @@ let elements = products.find(p=>{
 })
 
 console.log(products)
+
+console.log("Inicio de programa");
+
+function cargarDatosDesdeElServidor(callback){
+    setTimeout(() => {
+        const datos = "Datos cargados desde el servidor";
+        callback(datos)
+    }, 2023);
+}
+
+function procesarDatos(datos){
+    console.log("1. Se estan pocesando los datos cargados", datos);
+}
+
+console.log("2. Pidiendo datos al servidor");
+procesarDatos(datosCargados);
+console.log("3. Fin de carga de datos procesados desde el servidor");
