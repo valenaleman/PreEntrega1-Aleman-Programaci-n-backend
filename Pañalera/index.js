@@ -35,7 +35,7 @@ let products = [
 
 let elements = products.find(p=>{
     let products;
-    products = p.id === 3
+    products = p.id === 3;
     return products;
 })
 
